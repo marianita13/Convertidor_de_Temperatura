@@ -1,19 +1,21 @@
 const tempInicial = document.getElementById('grados');
 const celsius = document.getElementsByTagName('input');
-const tempFinal = document.getElementById('tempFinal')
-const tempFinal2 = document.getElementById('tempFinal2')
-const mercurio = document.getElementById('color')
+const tempFinal = document.getElementById('tempFinal');
+const tempFinal2 = document.getElementById('tempFinal2');
+const mercurio = document.getElementById('color');
+const convert = document.getElementById('convertir');
 let resultado;
 
-if (isNaN(tempInicial.value)){
-    alert('No es un número')
-    resultado=''
-
-    tempFinal.innerHTML=`${resultado}°`
-    tempFinal2.innerHTML=`${resultado}°`
-    tempInicial.value=''
-}else{
-    function convertir(){
+    convert.addEventListener('click', function(){
+        if (isNaN(tempInicial.value)){
+            alert('No es un número')
+            resultado=''
+        
+            tempFinal.innerHTML=`-°`
+            tempFinal2.innerHTML=`-°`
+            tempInicial.value=''
+        }else{
+        console.log(tempInicial.value);
         if (celsius[1].checked==true){
             resultado=(tempInicial.value-32)*(5/9)
         }
@@ -36,6 +38,6 @@ if (isNaN(tempInicial.value)){
         tempFinal.innerHTML=`${resultado.toFixed(2)}°`
         tempFinal2.innerHTML=`${resultado.toFixed(2)}°`
         tempInicial.value=''
-    }
-}
-
+        }
+    })
+    
