@@ -68,7 +68,6 @@ h1{
 .opciones{
     height: 20%;
     text-align: center;
-    /* padding-top: 15px; */
 }
 
 /* div resultado */
@@ -77,7 +76,6 @@ h1{
     border: solid 1px black;
     width: 80%;
     background-color: white;
-    /* text-align: center; */
     border-radius: 12px;
     display: flex;
     justify-content: center;
