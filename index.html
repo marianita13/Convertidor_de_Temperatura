@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de temperatura</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>"CONVERTIDOR TEMPERATURA"</h1>
+            </div>
+            <div class="medio">
+                <div class="informacion">
+                    <div class="numero">
+                        <input type="text" class="infoI" id="grados">
+                    </div>
+                    <div class="opciones">
+                        <input type="radio" name="temperatura" id="celsius">
+                        <label for="celsius">F - C</label><br>
+                        <input type="radio" name="temperatura" id="faren">
+                        <label for="faren">C - F</label><br>
+                    </div>
+                    <div class="resultado" id="tempFinal">
+
+                    </div>
+                    <div class="boton">
+                        <button onclick="convertir()">CONVERTIR</button>
+                    </div>
+                </div>
+                <div class="parte2">
+                    <div id="tempFinal2">
+
+                    </div>
+                    <div class="barra">
+                        <div class="color" id="color"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

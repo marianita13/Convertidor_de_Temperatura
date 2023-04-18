@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,main{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 230, 255);
+}
+.contenedor{
+    border: solid 1px black;
+    padding: 20px;
+    height: 55%;
+    width: 40%;
+    background-color:rgba(255, 228, 196, 0.596);
+    border-radius: 15px;
+    box-shadow:rgb(85, 85, 85) 8px 10px 20px
+}
+
+/* titulo */
+.titulo{
+    height: 15%;
+}
+h1{
+    text-align: center;
+}
+
+/* division */
+.informacion{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.medio{
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* input */
+.numero{
+    height: 30%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoI{
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+/* radio */
+.opciones{
+    height: 20%;
+    text-align: center;
+    /* padding-top: 15px; */
+}
+
+/* div resultado */
+.resultado{
+    height: 17%;
+    border: solid 1px black;
+    width: 80%;
+    background-color: white;
+    /* text-align: center; */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+/* barra */
+.parte2{
+    height: 85%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.barra{
+    border-radius: 8px;
+    height: 90%;
+    width: 80%;
+    border: solid 1px black;
+    transform: rotate(180deg);
+    background-color: white;
+    overflow: hidden;
+}
+.color{
+    width: 100%;
+    /* height: 70%; */
+    background-color: rgba(89, 243, 179, 0.87);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition:ease 1.4s
+}
+#tempFinal2{
+    height: 10%;
+    width: 70%;
+    text-align: center;
+}
+
+/* boton */
+.boton{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+button{
+    height: 80%;
+    width: 100%;
+    border: black solid 1px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: rgba(131, 253, 202, 0.836);
+    transition: all 0.7s;
+}
